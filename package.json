@@ -6,6 +6,7 @@
   "author": "Ludoviko",
   "license": "MIT",
   "dependencies": {
+    "bootstrap-icons": "^1.4.0",
     "tauri": "^0.14.1"
   }
 }
