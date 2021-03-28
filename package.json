@@ -1,0 +1,11 @@
+{
+  "name": "Vetero",
+  "version": "1.0.0",
+  "description": "A simple Weather app for Tauri",
+  "main": "index.js",
+  "author": "Ludoviko",
+  "license": "MIT",
+  "dependencies": {
+    "tauri": "^0.14.1"
+  }
+}
