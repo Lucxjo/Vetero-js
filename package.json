@@ -2,11 +2,17 @@
   "name": "Vetero",
   "version": "1.0.0",
   "description": "A simple Weather app for Tauri",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "author": "Ludoviko",
   "license": "MIT",
   "dependencies": {
     "bootstrap-icons": "^1.4.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
     "tauri": "^0.14.1"
+  },
+  "scripts": {
+    "start": "node -r esm src/index.js"
   }
 }
