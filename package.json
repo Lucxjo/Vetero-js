@@ -12,7 +12,7 @@
     "tauri": "^0.14.1"
   },
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon app.js"
   },
   "devDependencies": {
     "dotenv": "^9.0.2",
