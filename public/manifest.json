@@ -1,0 +1,15 @@
+{
+    "short_name": "Vetero",
+    "name": "Vetero",
+    "icons": [
+        {
+            "src": "./img/icon.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#2F96A3",
+    "background_color": "#2F96A3"
+}
