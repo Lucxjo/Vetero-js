@@ -1,5 +1,6 @@
 import axios from 'axios';
-import secrets from './secrets.json'
+
+const OWM_API = process.env.OWM_API || require("./secrets.json").owm_api;
 
 const URL = 'https://api.openweathermap.org/data/2.5/weather';
 
@@ -8,7 +9,7 @@ export const fetchWeather = async (query) => {
         params: {
             q: query,
             units: 'metric',
-            APPID: secrets.owm_api
+            APPID: OWM_API
         }
     });
 
