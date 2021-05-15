@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-Regular.woff?raw=true) format("woff"),
+         url(https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-Regular.woff2?raw=true)format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-Bold.woff?raw=true) format("woff"),
+         url(https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-Bold.woff2?raw=true)format("woff2");
+    font-weight: bold;
+}
