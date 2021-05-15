@@ -26,7 +26,12 @@ const App = () => {
                     </h2>
 
                     <div className="city-temp">
-                        {Math.round(weather.main.temp)}
+                        {Math.round(weather.main.temp * 10) / 10}
+                        <sup>&deg;C</sup>
+                    </div>
+
+                    <div className="city-feel">
+                        Feels like: {Math.round(weather.main.feels_like)}
                         <sup>&deg;C</sup>
                     </div>
 
@@ -34,6 +39,41 @@ const App = () => {
                         <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
                         <p>{weather.weather[0].description}</p>
                     </div> 
+
+                    <div className="detail">
+                        <div className="detail-temp">
+                            <div className="detail-temp-max detail-left">
+                                <p>Max temp</p>
+                                <p>
+                                    {weather.main.temp_max}
+                                    <sup>&deg;C</sup>
+                                </p>
+                            </div>
+                            <div className="detail-temp-min detail-right">
+                                <p>Min temp</p>
+                                <p>
+                                    {weather.main.temp_max}
+                                    <sup>&deg;C</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="detail-other">
+                            <div className="detail-other-pressure detail-left">
+                                <p>Pressure</p>
+                                <p>
+                                    {weather.main.pressure}
+                                    <sup>hPa</sup>
+                                </p>
+                            </div>
+                            <div className="detail-other-humidity detail-right">
+                                <p>Humidity</p>
+                                <p>
+                                    {weather.main.humidity}
+                                    <sup>%</sup>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>

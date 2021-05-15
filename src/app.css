@@ -36,7 +36,7 @@ html, body, #root {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px 8%;
+    padding: 5rem 10rem;
     border-radius: 20px;
     background: rgba(250, 250, 250, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
@@ -82,6 +82,31 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.city-feel {
+    font-size: 14pt;
+}
+
+.detail sup {
+    text-transform: none !important;
+}
+
+.detail-temp, .detail-other {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-temp-min, .detail-temp-max, .detail-other-pressure, .detail-other-humidity {
+    padding: 1rem;
+}
+
+.detail-left {
+    text-align: start;
+}
+
+.detail-right {
+    text-align: end;
 }
 
 @media only screen and (max-width: 600px) {
