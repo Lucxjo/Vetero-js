@@ -1,15 +1,37 @@
 {
-    "short_name": "Vetero",
-    "name": "Vetero",
-    "icons": [
-        {
-            "src": "./img/icon.png",
-            "type": "image/png",
-            "sizes": "1024x1024"
-        }
-    ],
-    "start_url": ".",
-    "display": "standalone",
-    "theme_color": "#2F96A3",
-    "background_color": "#2F96A3"
+  "name": "Vetero",
+  "short_name": "Vetero",
+  "lang": "en",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2F96A3",
+  "icons": [
+    {
+      "src": "./img/Vetero 64x64.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./img/Vetero.svg",
+      "sizes": "4096x4069 any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./img/Vetero 1240x1240.png",
+      "sizes": "1240x1240",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/apple-touch-icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/apple-touch-icon-full.png",
+      "sizes": "4096x4096",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#2F96A3"
 }
