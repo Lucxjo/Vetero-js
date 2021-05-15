@@ -5,25 +5,24 @@
     <link rel="icon" href="./img/icon.png" type="image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#2F96A3" />
-    <meta
-      name="description"
-      content="A weather app built on react"
-    />
+    <meta name="description" content="A weather app built on react" />
     <link rel="apple-touch-icon" href="./img/icon.png" />
     <link rel="manifest" href="./manifest.json" />
     <title>Vetero</title>
+    <script id="react-dotenv" src="https://v.ludoviko.xyz/env.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./serviceworker.js')
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
             .then((reg) => console.log("Success! ", reg.scope))
-            .catch((err) => console.log("Failure! ", err))
-        })
+            .catch((err) => console.log("Failure! ", err));
+        });
       }
     </script>
   </body>
