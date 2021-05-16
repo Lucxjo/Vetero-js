@@ -9,7 +9,7 @@ html, body, #root {
 }
 
 .main-container {
-    background: linear-gradient( rgb(47, 150, 163), rgb(48, 62, 143));
+    background: rgb(48, 62, 143);
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +38,7 @@ html, body, #root {
     flex-direction: column;
     padding: 5rem 10rem;
     border-radius: 20px;
-    background: rgba(250, 250, 250, 0.75);
+    background: rgba(250, 250, 250, 0.5);
     box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
 }
 
@@ -69,7 +69,7 @@ p {
     margin-left: 0.2em;
     border-radius: 30px;
     color: #fff;
-    background: #ff8c00;
+    background: rgb(47, 150, 163);
 }
 
 .city-icon {
@@ -92,12 +92,12 @@ p {
     text-transform: none !important;
 }
 
-.detail-temp, .detail-other {
+.detail-temp, .detail-other, .detail-sun {
     display: flex;
     flex-direction: row;
 }
 
-.detail-temp-min, .detail-temp-max, .detail-other-pressure, .detail-other-humidity {
+.detail-temp-min, .detail-temp-max, .detail-other-pressure, .detail-other-humidity, .detail-sun-rise, .detail-sun-set {
     padding: 1rem;
 }
 
@@ -107,6 +107,14 @@ p {
 
 .detail-right {
     text-align: end;
+}
+
+.detail-left p {
+    margin-right: 2rem;
+}
+
+.detail-right p {
+    margin-left: 2rem;
 }
 
 @media only screen and (max-width: 600px) {

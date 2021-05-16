@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import moment from 'moment';
 import { fetchWeather } from './api/fetchWeather'
 import './app.css'
 
@@ -52,7 +53,7 @@ const App = () => {
                             <div className="detail-temp-min detail-right">
                                 <p>Min temp</p>
                                 <p>
-                                    {weather.main.temp_max}
+                                    {weather.main.temp_min}
                                     <sup>&deg;C</sup>
                                 </p>
                             </div>
@@ -70,6 +71,20 @@ const App = () => {
                                 <p>
                                     {weather.main.humidity}
                                     <sup>%</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="detail-sun">
+                            <div className="detail-sun-rise detail-left">
+                                <p>Sunrise</p>
+                                <p>
+                                    {moment.unix(weather.sys.sunrise).format('HH:mm:ss')}
+                                </p>
+                            </div>
+                            <div className="detail-sun-set detail-right">
+                                <p>Sunset</p>
+                                <p>
+                                    {moment.unix(weather.sys.sunset).format('HH:mm:ss')}
                                 </p>
                             </div>
                         </div>
