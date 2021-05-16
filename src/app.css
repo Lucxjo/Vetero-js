@@ -98,7 +98,7 @@ p {
 }
 
 .detail-temp-min, .detail-temp-max, .detail-other-pressure, .detail-other-humidity, .detail-sun-rise, .detail-sun-set {
-    padding: 1rem;
+    padding: .1rem .25rem;
 }
 
 .detail-left {
@@ -109,20 +109,12 @@ p {
     text-align: end;
 }
 
-.detail-left p {
-    margin-right: 2rem;
-}
-
-.detail-right p {
-    margin-left: 2rem;
-}
-
 @media only screen and (max-width: 600px) {
     .search {
         padding: 20px 15%;
     }
 
     .city {
-        padding: 40px 20%;
+        padding: 40px 15%;
     }
 }
