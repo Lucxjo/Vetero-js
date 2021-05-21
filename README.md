@@ -7,5 +7,8 @@ You can view this project at https://v.ludoviko.xyz
 ### Desktop (Safari)
 <img src="https://imgur.com/ynz7Lzm.png" alt="Desktop" height="600px" />
 
+### Desktop PWA (Brave/Chrome, macOS)
+<img src="https://imgur.com/xoSgAuI.png" alt="Desktop" height="600px" />
+
 ### Mobile PWA (iOS)
 <img src="https://imgur.com/CoCLqiU.png" alt="Mobile PWA" height="600px" />
